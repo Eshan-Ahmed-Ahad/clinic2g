@@ -93,7 +93,7 @@
 
                     <input type="text" class="form-control form-control-lg empty"  placeholder="&#xF002; Search" id="iconified">
                     
-                    <button class="btn CreateButton" data-toggle="modal" data-target="#Modal" >Create</button>
+                    <button class="btn CreateButton" data-toggle="modal" data-target=".ModalArea" >Create</button>
                    </div>
                 </div>
             </div>
@@ -101,77 +101,68 @@
    
 <!-- Create popUp Message -->
 
-<div class="modal fade " tabindex="-1" role="dialog" id="Modal">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content" id="ModalBox" >
-        <div class="container" >
-            <div class="row " >
-                <div class="col ">
-             
-                        <div class="card-content table-responsive">
-                            <table class="table table-hover ">
-                                <thead class="">
-                                    <h3 class="Appointmentsdate">Appointments On 29/01/2022</h3>
-                                    <button type="button" class="close" data-dismiss="modal" id="CloseIcon">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                        
-                                    <tr>
+<div class="modal fade ModalArea" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" id="ModalPadding">
+    <div class="modal-content">
+        <div class="icon-button">
+            <span class="icon-button__badge" data-dismiss="modal">&times;</span>
+         <div class="container table-responsive">
+            <table class="table table-hover">
+                <h3 class="AppointmentsH3">Appointments on 29/01/2022</h3>
+                <thead class="">
+                    <tr>
 
-                                    <th> <span class="mr-3">patient's name</span>
-                                    </th>
+                    <th> <span class="mr-3">patient's name</span>
+                    </th>
 
-                                    <th><span class="mr-5">service</span>
-                                      
-                                    </th>
-                                    
-                                    <th> <span class="mr-5">Time</span>
-                                    </th>
-                                    <th> <span class="mr-5">status</span>
-                                      </th>
-                                      <th> </th>
+                    <th><span class="mr-5">service</span>
+                        
+                    </th>
+                    
+                    <th> <span class="mr-5">Time</span>
+                        <th> <span class="mr-5">status</span>
+                    
+                    <th></th>
+                </tr></thead>
+                <tbody>
+                    <tr>
+            
+                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
+                        <td>flu vaccination</td>
+                        <td>01:00 AM</td>
+                        <td class="DeColor">NA</td>
+                    
+                        <td><button class="btn ViewButton">View</button></td>
+                    </tr>
+                    <tr>
+                  
+                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
+                        <td> travel vaccinations</td>
+                        <td>01:00 AM</td>
 
+                        <td><img src="../img/Group 19109.png" alt=""> <span class="Bold">Completed</span></td>
 
-                                </tr></thead>
-                                <tbody>
-                                    <tr>
-        
-                                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
-                                        <td>flu vaccination</td>
-                                        <td>01:00 PM</td>
-                                        <td class="DeColor">NA</td>
-                                    
-                                        <td><button class="btn ViewButton">View</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
-                                        <td> travel vaccinations</td>
-                                        <td>01:00 PM</td>
-                                        <td><img src="../img/Group 19109.png" alt=""> <span class="Bold">Completed</span></td>
-                                        
+                        <td><button class="btn ViewButton">View</button></td>
+                    </tr>
+                    <tr>
+                
+                        <td> <img class="mr-2" src="../img/Mask Group 47.png" alt=""> <span > Hablu Vaiya</span></td>
+                         <td> travel vaccinations</td>
+                        <td>01:00 AM</td>
+                        <td><span class="text-danger">Cancelled </span></td>
 
-                                        <td><button class="btn ViewButton">View</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
-                                        <td> travel vaccinations</td>
-                                        <td>01:00 PM</td>
+                        <td><button class="btn ViewButton">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
 
-                                        <td><span class="text-danger">Cancelled </span></td>
-
-                                        <td><button class="btn ViewButton">View</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-               
-                </div>
-            </div>
-        </div>
+         
+       </div>
     </div>
   </div>
 </div>
+    
 
 <!-- Create popup message end  -->
         
@@ -240,7 +231,8 @@
             </div>
         </div>
  
-        
+
+
     <div  id="Calander">
         <div class="container b-tab" id="green">
             <div class="row ">
