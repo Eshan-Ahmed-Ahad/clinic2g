@@ -12,12 +12,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  </head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
   <body>
   
-
-
-
 <div class="wrapper">
 
 <div class="body-overlay"></div>
@@ -28,8 +26,14 @@
     </div>
     <div class="Profile ml-auto">
         <img src="../img/Mask Group 296.png" alt=""> <span class="SmallDeviceNone">london clinic</span>
+
+        <button class="d-inline-block d-lg-none ml-auto more-button btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+          <img src="../img/menu-button-wide.svg" alt="">
+        </button>
+
     </div>
 </div>
+
         <!-- Sidebar  -->
         <nav id="sidebar">
             <ul class="list-unstyled components">
@@ -66,6 +70,9 @@
 		
         <div id="content">
 
+             
+
+
             <div class="row container AppointmentHeader">
                 <div class="col-md-6">
                     <div class="row ">
@@ -83,7 +90,8 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                    <div class="d-flex MarginTop">
-                    <input type="text" class="form-control form-control-lg" placeholder="  &#128269; Search">
+
+                    <input type="text" class="form-control form-control-lg empty"  placeholder="&#xF002; Search" id="iconified">
                     
                     <button class="btn CreateButton" data-toggle="modal" data-target="#Modal" >Create</button>
                    </div>
@@ -92,8 +100,6 @@
 
    
 <!-- Create popUp Message -->
-  
-<!-- Large modal -->
 
 <div class="modal fade " tabindex="-1" role="dialog" id="Modal">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -168,15 +174,7 @@
 </div>
 
 <!-- Create popup message end  -->
-
-        <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">		
-
-            <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="img/menu-button-wide.svg" alt="">
-            </button>
-                    
-  </div>
+        
 
 <!-- list 7 Calander area changing -->
  
@@ -365,14 +363,11 @@
     </div>
 
 </div>
+<!-- Appointments -->
 
-
-        <!-- Appointments -->
-
-
-			</div>
-        </div>
-    </div>
+ </div>
+ </div>
+</div>
 <!-- Appointments list area end -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -382,7 +377,20 @@
    <script src="../js/jquery-3.3.1.min.js"></script>
   
   
-  <script type="text/javascript">
+<script type="text/javascript">
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+			
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+			
+        });
+
 
 var tab; 
 var tabContent; 
@@ -422,18 +430,6 @@ function showTabsContent(b){
         tabContent[b].classList.add('show');
     }
 }
-
-  $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-				$('#content').toggleClass('active');
-            });
-			
-			 $('.more-button,.body-overlay').on('click', function () {
-                $('#sidebar,.body-overlay').toggleClass('show-nav');
-            });
-			
-        });
 
 </script>
 

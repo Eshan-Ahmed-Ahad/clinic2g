@@ -18,7 +18,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     line-height: 1.5em;
 }
 
-
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
 p {
 	font-size: 15px;
 	margin: 12px 0 0;
@@ -754,7 +759,7 @@ th {
 }
 
 .Bold {
-    font-weight: bold;
+    font-weight: 500;
 }
 .ViewButton {
     background-color: #dce3f2;
@@ -931,6 +936,12 @@ calander option on  */
     height: 50px !important;
     text-align: end !important;
 }
+#orange tr th {
+    width: 150px !important;
+    text-align: justify !important;
+
+    height: 50px !important;
+}
 
 .StartDate {
     color: rgb(188, 188, 188);
@@ -1064,6 +1075,13 @@ margin-top: 20px;
       }
   }
   @media all and (max-width:991px){
+    #ModalBox {
+        border-radius: 15px !important;
+        width: 99% !important;
+        height: 500px !important;
+        background-color: none !important;
+    }
+
     .AppointmentHeader {
         margin-left: 13%;
       }
@@ -1079,6 +1097,22 @@ margin-top: 20px;
       }
   }
   @media all and (max-width:767px){
+    #upcomingList1 {
+        background-color: rgb(241, 241, 241) !important;
+        width: 41%;
+        height: 50px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+      #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 41%;
+        height: 50px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
     .AppointmentHeader {
         margin-left: 14%;
       }
@@ -1185,3 +1219,6 @@ margin-top: 1% !important;
 }
 
 
+.more-button {
+    margin-left: 50px !important;
+}
