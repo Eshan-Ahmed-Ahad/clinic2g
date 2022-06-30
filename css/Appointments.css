@@ -1063,12 +1063,43 @@ margin-top: 20px;
         margin-left: 15px;
       }
   }
-  @media all and (max-width:992px){
-   .AppointmentHeader {
-margin-left: 300px;
-   }
+  @media all and (max-width:991px){
+    .AppointmentHeader {
+        margin-left: 13%;
+      }
+  }
+  @media all and (max-width:885px){
+    .AppointmentHeader {
+        margin-left: 9%;
+      }
+  }
+  @media all and (max-width:800px){
+    .AppointmentHeader {
+        margin-left: 4%;
+      }
   }
   @media all and (max-width:767px){
+    .AppointmentHeader {
+        margin-left: 14%;
+      }
+    }
+ @media all and (max-width:690px){
+        .AppointmentHeader {
+            margin-left: 10%;
+          }
+        }
+@media all and (max-width:620px){
+            .AppointmentHeader {
+                margin-left: 3%;
+ }
+}
+     
+@media all and (max-width:575px){
+    .AppointmentHeader {
+        margin-left: 0%;
+}
+
+        
     #upcomingList {
         background-color: rgb(241, 241, 241) !important;
         width: 100%;
@@ -1145,6 +1176,7 @@ margin-top: 1% !important;
     font-size: 15px !important;
     margin-right: 8px !important;
 }
+
 @media all and (max-width:1120px){
     .AppBox span{
         font-size: 12px !important;
