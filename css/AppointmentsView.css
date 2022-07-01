@@ -1075,3 +1075,9 @@ margin-bottom: -20px;
     }
    
 }
+
+@media all and (max-width:442px) {
+    .DoctorButton .DoctorOutlineButton {
+        margin-bottom: 10px;
+    }
+}
