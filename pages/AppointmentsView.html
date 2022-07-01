@@ -12,7 +12,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     </head>
   <body>
   
@@ -70,14 +69,21 @@
 		
         <div id="content">
             <!-- Header Area -->
-            <div class="d-flex container">
+         <div class="row container">
+            <div class="col-md-6 vaccination">
                 <div class="ViewHeader">
                       <h4><img src="../img/Group 18959.png" alt=""> Hablu vaiya / Flu vaccination <span class="CHangedCOlor">(NHS:01234)</span> </h4>
                 </div>
-                <div class="fees ml-auto">
-                   <h5> Fee:₹7</h5>
+                </div>
+                <div class="fees col-md-6" >
+                    <div><h5 class="mr-3"> Fee:₹7</h5></div>
+                   <div class="DoctorButton">
+                        <button class="btn DoctorOutlineButton">Download Report</button>
+                        <button class="btn btn-primary">Send Report To Doctor</button>
+                   </div>
                 </div>
             </div>
+ 
 
             <div class="ViewBox container">
                 <div class="row mb-2">
@@ -103,7 +109,7 @@
                     </div>
                     <div class="col">
                         <p class="Name">Status</p>
-                        <p class="nameValue">NA</p>
+                        <p class="nameValue">Completed</p>
                     </div>
                 </div>
             </div>
@@ -116,38 +122,120 @@
             <div class="row container">
                 <div class="col-md-11">
                     <div class="info">
-                        <p class="patientP">the patient has not filled the form Yet!</p>
+                        <p class="patientP"> Patient's Form</p>
                         <div class="Question">
                             <div class="Question1">
                                 <p>Do You Pay for this Service?</p>
-                                <p class="Ans">Answer: NA</p>
+                                <p class="Ans">Answer: Yes</p>
 
                             </div>
                             <div class="Question2">
-                                <p>Second Question Which is Multi Selection Answer ?</p>
-                                <p class="Ans">Answer: NA</p>
+                                <p>Second Question Which is Multi Selection Answer.</p>
+                              <div class="MultiSelectionButton mt-2">
+                                <button class="btn MSB mt-1">Option1</button>
+                                <button class="btn MSB mt-1">Option2</button>
+                                <button class="btn MSB mt-1">Option3</button>
+                                <button class="btn MSB mt-1">Option4</button>
+                              </div>
 
                             </div>
                             <div class="Question3">
                                 <p>third Question Which is Long Answer</p>
-                                <p class="Ans">Answer: NA</p>
+                                <p class="Ans">Answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis sequi dolorem sint. Nulla totam quae amet natus vitae deserunt.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-1">
                     <div class="Edit">
-                        <p>Edit</p>
+                        <p data-toggle="modal" data-target=".ModalArea">Edit</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Information Area  -->
 
+
+<!-- popup message area  start-->
+<div class="modal fade ModalArea" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" id="ModalPadding">
+      <div class="modal-content">
+          <div class="icon-button">
+              <span class="icon-button__badge" data-dismiss="modal">&times;</span>
+           <div class="container">
+    
+                 <div class="popUpInfo">
+                    <h3 class="AppointmentFluH3">Hablu Vaiya / Flu Vaccination 29/01/2022</h3>
+                    <p class="AppointmentFluP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis facilis eveniet vel quos cumque, itaque officiis excepturi quod aut?</p>
+                 </div>
+
+                 <div class="formDesign">
+                    <form id="SmallForm">
+                        <div class="row">
+                          <div class="col">
+                            <label for="" class="SomeBold">pharmacist's Name</label>
+                            <input type="text" class="form-control" placeholder="Write The Response">
+                          </div>
+                          <div class="col">
+                            <label for="" class="SomeBold">Question2</label>
+
+                            <input type="text" class="form-control" placeholder="Write The Response">
+                          </div>
+                          <div class="col">
+                            <label for="" class="SomeBold">Question3</label>
+
+                            <input type="text" class="form-control" placeholder="Write The Response">
+                          </div>
+                        </div>
+                      </form>
+<!-- 2nd form start -->
+                      <form id="BigForm">
+                     
+                        <div class="textArea2">
+                            <label for="" class="SomeBold">1. The First Question is Pharmacist To Answer</label>
+                            <textarea class="form-control" placeholder="Write The Response">
+                        </textarea>
+                              
+                     <div class="textArea2">
+                        <label for="" class="SomeBold">2. The Second Question is Pharmacist To Answer</label>
+                        <textarea   class="form-control" placeholder="Write The Response">
+                      </textarea>
+                     </div>
+
+                      </form>
+<!-- 2nd form  -->
+<button class="btn MarkAsCompleted">Mark As Completed</button>
+
+                 </div>
+
+           </div>
+           
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- popup message area  -->
+
+     <div class="ViewBox ">
+        <div class="container">
+            <h3 class="PForm">pharmacist form </h3>
+            <div class="PQu1">
+                <p >Question1</p>
+                <p class="Pans">Answer: yes</p>
+            </div>
+            <div class="PQu1">
+                <p > Question2</p>
+                <p class="Pans"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quo!</p>
+            </div>
+        </div>
+     </div>
+
+
     <div class="footer container">
         <div class="FooterAreaButton ">
-            <button class="CompletedButton1 btn disabled">Mark As Completed </button>
-            <button class="CompletedButton btn ml-auto text-danger">Cancel Appointments</button>
+        
+            <button class="CompletedButton btn ml-auto text-danger">Mark As Not Completed</button>
         </div>
     </div>
 </div>
@@ -155,7 +243,6 @@
 <!-- AppointmentsView-->
 
  </div>
-
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

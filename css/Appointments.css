@@ -1090,6 +1090,9 @@ margin-top: 20px;
       }
   }
   @media all and (max-width:767px){
+    #SmallIconHidden {
+        display: none;
+    }
     #upcomingList1 {
         background-color: rgb(241, 241, 241) !important;
         width: 41%;
@@ -1267,6 +1270,7 @@ margin-top: 1% !important;
     background-color: #EB6565;
 
 }
+/* icon area end  */
 
 .AppointmentsH3 {
     color: #3968CA;
@@ -1279,4 +1283,48 @@ margin-top: 1% !important;
 
 #ModalPadding {
     padding: 10px !important;
+}
+
+@media all and (max-width:432px){
+    .listBtn1 {
+        margin-left: 7%;
+        background-color: #fff;
+        padding-left: 50px !important;
+        padding-right: 50px;
+    }
+}
+@media all and (max-width:388px){
+    .listBtn1 {
+        margin-left: 7%;
+        background-color: #fff;
+        padding-left: 50px !important;
+        padding-right: 50px;
+    }
+    .UpcomingButton {
+        width: 40%;
+    }      
+}
+
+@media all and (max-width:360px){
+    #marginLeft {
+        margin-left: 5% !important;
+        margin-top: 1% !important;
+      }  
+}
+
+@media all and (max-width:347px){
+    #marginLeft {
+        margin-left: 5% !important;
+        margin-top: 1% !important;
+      }  
+}
+
+@media all and (max-width:338px){
+    #upcomingList button {
+        margin-top: 3%;
+        margin-right: 0%;
+      }
+      .UpcomingButton {
+        width: 60%;
+      }
 }

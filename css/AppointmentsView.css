@@ -5,10 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 	 margin:0px;
      padding:0px;
+     text-transform:capitalize;
 
     
 }
 body{
+    font-family: 'Montserrat', sans-serif;
+
     overflow-x: hidden !important;
     text-transform: capitalize;
 }
@@ -18,12 +21,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     line-height: 1.5em;
 }
 
-input.empty {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-}
+
 p {
 	font-size: 15px;
 	margin: 12px 0 0;
@@ -200,17 +198,7 @@ a:focus {
         background-color:rgb(241, 241, 241) !important;
     }
 }
-@media all and (max-width:992px){
-    #content {
-        margin-top: 0px;
-        transition: all 0.3s;
-        background-color:rgb(241, 241, 241) !important;
-    }
-    .SmallDeviceNone {
-        display: none;
-    }
-   
-}
+
 @media all and (max-width:1127px){
     .UnderBox {
         background-color: #fff !important;
@@ -801,6 +789,10 @@ margin-bottom: -20px;
     color: rgb(114 111 111);
     font-weight: 500;
 }
+.fees {
+    display: flex;
+    margin-top: 15px;
+}
 .fees h5 {
     color: #3968CA;
     font-weight: 600;
@@ -812,7 +804,7 @@ margin-bottom: -20px;
     border-radius: 10px;
     width: 97%;
     height: auto;
-    margin: auto;
+    margin: 10px auto;
     padding: 10px !important;
 }
 
@@ -832,17 +824,18 @@ margin-bottom: -20px;
     border-radius: 10px;
     width: 97%;
     height: auto;
-    margin: 10px auto; 
-    padding-bottom: 150px !important;
+    margin: 10px auto;
+    padding-bottom: 35px !important;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-
 }
+
 .patientP {
     margin-top: 20px;
     margin-bottom: 25px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .Question1 p{
@@ -853,19 +846,25 @@ margin-bottom: -20px;
 .Question2 > p{
     margin-top: 20px;
     font-weight: 600;
+
 }
 
-.Question3 > p{
+.Question3{
     margin-top: 20px;
     font-weight: 600;
 }
 
 .Ans{
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     font-size: 14px;
+    color:#3968CA ;
 }
 
-
+.MSB {
+    background-color: #dce3f2;
+    color:  #3968CA;
+    font-weight: 400;
+}
 .Edit p {
     width: 65px;
     height: 40px;
@@ -874,23 +873,205 @@ margin-bottom: -20px;
     text-align: center;
     font-weight: 600;
     color:#3968CA ;
-}
-
-
-.FooterAreaButton {
-    display: flex;
-}
-
-.FooterAreaButton > .CompletedButton1 {
-    background-color: #3968CA;
-    color: #fff;
+    cursor: pointer;
 }
 
 .CompletedButton {
-    font-weight: 500;
+    margin-bottom: 50px;
 }
+
+
 
 .footer {
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+
+/* doctor buttons  */
+
+.DoctorOutlineButton {
+    color: #007bff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3968CA !important;
+    font-weight: 500;
+
+}
+.DoctorOutlineButton:hover {
+    color: #fff !important;
+    background-color: #3968CA;
+    background-image: none;
+    border-color: #3968CA !important;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3968CA;
+    border-color: #3968CA !important;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3968CA;
+    border-color: #3968CA !important;
+}
+
+.PForm {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.PQu1 > p {
+    font-weight: 600;
+
+}
+
+.Pans {
+    color: #3968CA;
+}
+
+
+@media all and (max-width:1284px){
+    .DoctorButton .DoctorOutlineButton {
+        margin-bottom: 10px;
+       
+    }
+}
+
+@media all and (max-width:767px) {
+    .DoctorButton .DoctorOutlineButton {
+        margin-bottom: 0px;
+    }
+    .vaccination {
+        display: block;
+ 
+    }
+    .ViewHeader {
+        text-align: center;
+    }
+    .fees {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
+/* icon area start  */
+
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 580px !important ;
+    border: 15px;
+    border: none;
+    outline: none;
+ 
+}
+
+  
+.icon-button__badge {
+    position: absolute;
+    top: -12px;
+    right: -14px;
+    width: 35px;
+    height: 35px;
+    background-color: #EB6565;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 900000000px !important;
+    font-size: 28px;
+    cursor: pointer;
+}
+.icon-button__badge:hover{
+
+    background-color: #EB6565;
+
+}
+/* icon area end  */
+
+
+/* popuparea  */
+
+.AppointmentFluH3 {
+    font-size: 20px;
+    color: #3968CA;
+    text-align: justify;
+    font-weight: 600;
+}
+.AppointmentFluP  {
+    font-size: 15px;
+    color: rgb(70, 68, 68);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.SomeBold {
+    font-weight: 600;
+}
+
+.formDesign input  {
+    background-color: rgba(241,241,241,241);
+    border: none !important;
+}
+.formDesign input::placeholder  {
+  font-size: 13px;
+}
+#SmallForm{
+    width: 80%;
+
+}
+#BigForm  {
+    margin-top: 20px; 
+}
+#BigForm textarea{
+    width: 80%;
+    background-color: rgba(241,241,241,241);
+    border: none;
+    padding: 20px ;
+    color: #333;
+}
+
+.textArea2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.MarkAsCompleted {
+    padding: 10px;
+    color: #fff;
+    background-color:#3968CA ;
+}
+
+
+@media all and (max-width:992px){
+    .icon-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 800px !important ;
+        border: 15px;
+        border: none;
+        outline: none;
+     
+    }
+    
+    #content {
+        margin-top: 0px;
+        transition: all 0.3s;
+        background-color:rgb(241, 241, 241) !important;
+    }
+    .SmallDeviceNone {
+        display: none;
+    }
+   
 }
