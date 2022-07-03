@@ -1,0 +1,386 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>patient View page</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/patientView.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+  <body>
+  
+<div class="wrapper">
+
+<div class="body-overlay"></div>
+
+<div class=" LogoArea ">
+    <div class="Logo">
+        <img src="../img/logo.png" alt="">
+    </div>
+    <div class="Profile ml-auto">
+        <img src="../img/Mask Group 296.png" alt=""> <span class="SmallDeviceNone">london clinic</span>
+
+        <button class="d-inline-block d-lg-none ml-auto more-button btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+          <img src="../img/menu-button-wide.svg" alt="">
+        </button>
+
+    </div>
+</div>
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+			<li  >
+                    <a href="../index.html" class="dashboard"><span>Home</span></a>
+              </li>
+
+              <li class="">
+                <a href="Appointments.html">Appointments</a>
+              </li>
+
+              <li class="active">
+                <a href="patient.html">Patients</a>
+              </li>
+              <li class="">
+                <a href="#">NMS</a>
+              </li>
+              <li class="">
+                <a href="#">Services & Availability</a>
+              </li>
+              <li class="">
+                <a href="#">Account Settings</a>
+              </li>
+
+              <li class="">
+                <a href="#">Subscription</a>
+              </li>
+			   
+              <li class="">
+                <a href="#">Sign Out</a>
+              </li>
+            </ul>
+        </nav>
+		
+        <div id="content">
+            <!-- Header Area -->
+         <div class="row container">
+            <div class="col-md-6 vaccination">
+                <div class="ViewHeader">
+                      <h4><img src="../img/Group 18959.png" alt=""> <span> Hablu vaiya</span> </h4>
+                </div>
+                </div>
+                <div class="fees col-md-6" >
+                  
+                   <div class="DoctorButton ml-auto">
+                        <button class="btn DoctorOutlineButton">Edit</button>
+                        <button class="btn DoctorOutlineButton">Delete</button>
+                   </div>
+
+                </div>
+            </div>
+ 
+
+            <div class="ViewBox container">
+                <div class="row mb-2">
+                    <div class="col-md-2">
+                        <p class="Name">Name</p>
+                        <p class="nameValue">Eshan Ahmed</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="Name">Email</p>
+                        <p class="nameValue">Example@gmail.com</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-md-2">
+                        <p class="Name">Phone</p>
+                        <p class="nameValue">+99015740245</p>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-2">
+                        <p class="Name">Gender</p>
+                        <p class="nameValue">Male/30</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="Name">Age</p>
+                        <p class="nameValue">20 Years</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="Name">Address</p>
+                        <p class="nameValue">40-46, India, Big bazar Dilli, GDK MOL</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Header Area -->
+
+
+ <!-- Information Area  -->
+ <div class="InfoArea ">
+           
+
+    <div class="container b-tab active" id="orange" >
+        <div class="row ">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-content table-responsive">
+                        <div id="upcomingList">
+                
+                            <button href="#orange" data-tab="orange" class="listBtn1 btn b-nav-tab active" >List</button>
+                            <button href="#green" data-tab="green" class="listBtn btn b-nav-tab" class=" ">Calendar</button>
+                           </div>
+                        <table class="table table-hover">
+                            <thead class="">
+                                <tr>
+                                <th><span class="mr-3">Date</span> <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"></th>
+                               
+                                <th> <span class="mr-3">patient's name</span> <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden">
+                                </th>
+
+                                <th><span class="mr-5">service</span>
+                                    <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"> 
+                                </th>
+                                
+                                <th> <span class="mr-5">status</span>
+                                    <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"></th>
+                                <th></th>
+                            </tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td>29/01/2022 <p class="text-primary Ptag">02:00 PM</p></td>
+                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
+                                    <td>flu vaccination</td>
+                                    <td class="DeColor">NA</td>
+                                
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>30/03/2022<p class="text-primary Ptag">02:00 PM</p></td>
+                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
+                                    <td> travel vaccinations</td>
+                                    <td><img src="../img/Group 19109.png" alt=""> <span class="Bold">Completed</span></td>
+
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>30/03/2022<p class="text-primary Ptag">02:00 PM</p></td>
+                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
+                                    <td> travel vaccinations</td>
+
+                                    <td><span class="text-danger">Cancelled </span></td>
+
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div  id="Calander">
+    <div class="container b-tab" id="green">
+        <div class="row ">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-content table-responsive">
+                        <div class="DisplayFlex">
+                            <div id="upcomingList1">
+                   
+                                <button href="#orange" data-tab="orange" class="listBtn btn b-nav-tab active" id="marginLeft">List</button>
+
+                                <button href="#green" data-tab="green" class="listBtn1 btn b-nav-tab" id="PaddingDown">Calendar</button>
+                                
+                            </div>
+                            <div class="Month">March 2022</div>
+                            
+                            <div class="UpcomingButton">
+                                <button class="btn Prev" >Prev</button>
+                                <button class="btn">Next</button>
+                            </div>
+
+                        </div>
+
+                        <table class="table table-bordered">
+                            <thead class="">
+                                <tr>
+                                <th>Sun</th>
+                               
+                                <th>
+                                    Mon
+                                </th>
+
+                                <th>Tue </th>
+                                <th>wed </th>
+                                
+                                <th>  Thu</th>
+                                <th> Fri</th>
+                                <th> Sat</th>
+                            </tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td> <div class="StartDate">30</div></td>
+                                    <td> <div class="StartDate">31</div></td>
+                                    <td> <div class="Date">1</div></td>
+                                    <td> <div class="Date">2</div></td>
+                                    <td> <div class="Date">3</div></td>
+                                    <td>
+                                      <span class="PatientsDate d-flex">
+                                           <div class="mt-1"> 5 Patients </div>
+                                        <div class="PatientsDateMark">4</div>
+                                    </span>
+                                </td>
+
+                                <td> <div class="Date">5</div></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="PatientsDate d-flex">
+                                             <div class="mt-1"> 2 Patients </div>
+                                          <div class="PatientsDateMark">6</div>
+                                      </span>
+                                  </td>
+
+                                  <td> <div class="Date">7</div></td>
+                                  <td> <div class="Date">8</div></td>
+                                  <td> <div class="Date">9</div></td>
+                                  <td> <div class="Date">10</div></td>
+                                  <td> <div class="Date">11</div></td>
+                                  <td> <div class="Date">12</div></td>
+
+                                </tr>
+                                <tr>
+                                   
+                                  <td> <div class="Date">13</div></td>
+                                  <td> <div class="Date">14</div></td>
+                                  <td>
+                                   
+                                   <span class="PatientsDate d-flex">
+                                        <div class="DownMargin"> 1 Patients </div>
+                                      <div class="PatientsDateMark">15</div>    
+                                  </span>
+
+                                   <div class="text-danger CancelledDiv">2 Cancelled</div>
+                               
+                                 </td>
+                                  <td> <div class="Date">16</div></td>
+                                  <td> <div class="Date">17</div></td>
+                                  <td> <div class="Date">18</div></td>
+                                  <td> <div class="Date">19</div></td>
+                                </tr>
+                                <tr>
+                                   
+                                    <td> <div class="Date">20</div></td>
+                                    <td> <div class="Date">21</div></td>
+                                    <td> <div class="Date">22</div></td>
+                                    <td> <div class="Date">23</div></td>
+                                    <td> <div class="Date">24</div></td>
+                                    <td> <div class="Date">25</div></td>
+                                    <td> <div class="Date">26</div></td>
+                                  </tr>
+                                  <tr>
+                                   
+                                    <td> <div class="Date">27</div></td>
+                                    <td> <div class="Date">28</div></td>
+                                    <td> <div class="Date">29</div></td>
+                                    <td> <div class="Date">30</div></td>
+                                    <td> <div class="Date">31</div></td>
+                                    <td> <div class="StartDate">1</div></td>
+                                    <td> <div class="StartDate">02</div></td>
+                                  </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- Information Area  -->
+
+
+
+<!-- AppointmentsView-->
+
+ </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="../js/jquery-3.3.1.slim.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/jquery-3.3.1.min.js"></script>
+  
+  
+<script type="text/javascript">
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+			
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+			
+        });
+
+        var tab; 
+var tabContent; 
+
+
+window.onload=function() {
+    tabContent=document.getElementsByClassName('tabContent');
+    tab=document.getElementsByClassName('tab');
+    hideTabsContent(1);
+}
+
+document.getElementById('tabs').onclick= function (event) {
+    var target=event.target;
+    if (target.className=='tab') {
+       for (var i=0; i<tab.length; i++) {
+           if (target == tab[i]) {
+               showTabsContent(i);
+               break;
+           }
+       }
+    }
+}
+
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        tab[i].classList.remove('whiteborder');
+    }
+}
+
+function showTabsContent(b){
+    if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+}
+</script>
+
+<script src="../js/tabs.js"></script>
+  </body>
+  
+  </html>
+
+

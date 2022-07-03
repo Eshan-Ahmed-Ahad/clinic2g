@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>Patients</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/patient.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+  <body>
+
+<div class="wrapper">
+
+<div class="body-overlay"></div>
+
+<div class=" LogoArea ">
+    <div class="Logo">
+        <img src="../img/logo.png" alt="">
+    </div>
+    <div class="Profile ml-auto">
+        <img src="../img/Mask Group 296.png" alt=""> <span class="SmallDeviceNone">london clinic</span>
+
+        <button class="d-inline-block d-lg-none ml-auto more-button btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+          <img src="../img/menu-button-wide.svg" alt="">
+        </button>
+
+    </div>
+</div>
+
+        <!-- Sidebar  -->
+<nav id="sidebar">
+            <ul class="list-unstyled components">
+			<li  >
+                    <a href="../index.html" class="dashboard"><span>Home</span></a>
+              </li>
+
+              <li class="">
+                <a href="Appointments.html">Appointments</a>
+              </li>
+
+              <li class="active">
+                <a href="patient.html">Patients</a>
+              </li>
+              <li class="">
+                <a href="#">NMS</a>
+              </li>
+              <li class="">
+                <a href="#">Services & Availability</a>
+              </li>
+              <li class="">
+                <a href="#">Account Settings</a>
+              </li>
+
+              <li class="">
+                <a href="#">Subscription</a>
+              </li>
+
+              <li class="">
+                <a href="#">Sign Out</a>
+              </li>
+            </ul>
+        </nav>
+<!--Side Bar Ends-->
+
+
+ <div id="content">
+
+  
+<!-- Dont't Delete This Button  -->
+<button href="#orange" data-tab="orange" class=" btn b-nav-tab active" ></button>
+<!-- Dont't Delete This Button  -->
+
+<!--Form Table-->
+<div class="container b-tab active" id="orange" >
+
+  <!-- form table Header -->
+<div class="d-flex table-head" id="">
+  <div class="p-2 flex-grow-1"><h4 class="Bold">Patients</h4></div>
+  <div class="p-2">
+    <input type="text" class="table-inp form-control form-control-lg empty"  placeholder="&#xF002; Search" id="iconified">
+  </div>
+  <div class="p-2">
+    <button class="btn CreateButton btn b-nav-tab" href="#green" data-tab="green" >Add</button>
+  </div>
+</div>
+  <!-- form table Header -->
+<div class="row ">
+  <div class="col-lg-12 col-md-12">
+      <div class="card">
+
+          
+          <div class="card-content table-responsive">
+              <table class="table table-hover">
+                  <thead class="">
+                      <tr>
+                      <th>patient's name</th>
+                      <th>Email  </th>
+                      <th>Phone Number  </th>
+                      <th>Services</th>
+                     
+                    <th></th>
+                    <th></th>
+                  </tr></thead>
+                  <tbody>
+                      <tr>
+
+                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
+                        <td>eshan123@gmail.com</td>
+                        <td>+44 123456789</td>
+                        <td>travel vaccinations</td>
+                        <td></td>
+                  
+                        <td><button class="btn ViewButton">View</button></td>
+                      </tr>
+                      <tr>
+                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
+                        <td>eshan123@gmail.com</td>
+                        <td>+44 123456789</td>
+                        <td>travel vaccinations</td>
+                        <td></td>
+                  
+                        <td><button class="btn ViewButton">View</button></td>
+                      </tr>
+                      <tr>
+                        <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
+                        <td>eshan123@gmail.com</td>
+                        <td>+44 123456789</td>
+                        <td>travel vaccinations</td>
+                        <td></td>
+                  
+                        <td><button class="btn ViewButton">View</button></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- table End -->
+</div>
+
+
+
+<!-- Add a New Patient Tab  -->
+
+<div class="container b-tab" id="green">
+  
+  <h5 class="NewP ">Add a New Patient</h5>
+  <div class="patient-div">
+    <form class="pt-form row g-3 pl-4">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label h6 Bold">Patient's Name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Full Name" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label h6 Bold">Email</label>
+        <input type="email" class="form-control" id="validationDefault02" placeholder="Enter Your Mail" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label h6 Bold">Phone Number</label>
+        <div class="input-group">
+          <input type="number" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="+44 0123456789" required>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault04" class="form-label h6 Bold">Gender</label>
+        <select class="form-control NewSelect"  >
+          <option selected  value="Choose">Choose</option >
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label h6 Bold">DOB</label>
+        <input type="date" class="form-control" id="validationDefault02" placeholder="01/01/1990" required>
+      </div>
+
+      <div class="col-md-8">
+        <label for="validationDefault03" class="form-label h6 Bold">Address</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Enter Address" required>
+      </div>
+    </form>
+  </div>
+    <div class="col-12 ">
+      <button class="btn pt-btn" type="submit">Save</button>
+    </div>
+  
+  </div>
+<!-- Add a New Patient Tab  End-->
+
+</div>
+</div>
+</div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="../js/jquery-3.3.1.slim.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/jquery-3.3.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+
+        });
+
+
+
+    //  this code for tab    
+var tab; 
+var tabContent; 
+
+
+window.onload=function() {
+    tabContent=document.getElementsByClassName('tabContent');
+    tab=document.getElementsByClassName('tab');
+    hideTabsContent(1);
+}
+
+document.getElementById('tabs').onclick= function (event) {
+    var target=event.target;
+    if (target.className=='tab') {
+       for (var i=0; i<tab.length; i++) {
+           if (target == tab[i]) {
+               showTabsContent(i);
+               break;
+           }
+       }
+    }
+}
+
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        tab[i].classList.remove('whiteborder');
+    }
+}
+
+function showTabsContent(b){
+    if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+}
+</script>
+
+<script src="../js/tabs.js"></script>
+  </body>
+
+  </html>
