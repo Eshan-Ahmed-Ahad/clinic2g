@@ -129,51 +129,62 @@
             <div class="col-lg-12 col-md-12">
                 <div class="card">
                     <div class="card-content table-responsive">
+                    
+                        <div class="DisplayFlex">
                         <div id="upcomingList">
                 
-                            <button href="#orange" data-tab="orange" class="listBtn1 btn b-nav-tab active" >List</button>
-                            <button href="#green" data-tab="green" class="listBtn btn b-nav-tab" class=" ">Calendar</button>
+                            <button href="#orange" data-tab="orange" class="listBtn1 btn b-nav-tab active" >Appointments</button>
+                            <button href="#green" data-tab="green" class="listBtn btn b-nav-tab" class=" ">NMS</button>
+                           
                            </div>
+
+                           <div class="CreateButtonArea ml-auto">
+                             <button class="btn CreateButton">Create</button>
+                           </div>
+                        </div>
+
                         <table class="table table-hover">
                             <thead class="">
                                 <tr>
-                                <th><span class="mr-3">Date</span> <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"></th>
+                                <th><span class="mr-3">Date</th>
                                
-                                <th> <span class="mr-3">patient's name</span> <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden">
-                                </th>
-
                                 <th><span class="mr-5">service</span>
-                                    <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"> 
+                                
                                 </th>
                                 
-                                <th> <span class="mr-5">status</span>
-                                    <img src="../img/chevron-expand.svg" alt="" id="SmallIconHidden"></th>
+                                <th> <span class="mr-5">status</span> </th>
+                                    
                                 <th></th>
-                            </tr></thead>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
                             <tbody>
                                 <tr>
-                                    <td>29/01/2022 <p class="text-primary Ptag">02:00 PM</p></td>
-                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Eshan Ahmed</td>
-                                    <td>flu vaccination</td>
-                                    <td class="DeColor">NA</td>
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="ChangeColor">NA</td>
+                                    <td ></td>
+                                    <td ></td>
                                 
                                     <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
                                 <tr>
-                                    <td>30/03/2022<p class="text-primary Ptag">02:00 PM</p></td>
-                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
-                                    <td> travel vaccinations</td>
-                                    <td><img src="../img/Group 19109.png" alt=""> <span class="Bold">Completed</span></td>
-
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="SomeBold" ><img src="../img/Group 19109.png" alt="" class="mr-2">Completed</td>
+                                    <td ></td>
+                                    <td ></td>
+                                
                                     <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
                                 <tr>
-                                    <td>30/03/2022<p class="text-primary Ptag">02:00 PM</p></td>
-                                    <td><img src="../img/Mask Group 47.png" alt="" class="mr-2"> Hablu Vaiya</td>
-                                    <td> travel vaccinations</td>
-
-                                    <td><span class="text-danger">Cancelled </span></td>
-
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="ChangeColor">NA</td>
+                                    <td ></td>
+                                    <td ></td>
+                                
                                     <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
                             </tbody>
@@ -193,110 +204,75 @@
                 <div class="card">
                     <div class="card-content table-responsive">
                         <div class="DisplayFlex">
-                            <div id="upcomingList1">
-                   
-                                <button href="#orange" data-tab="orange" class="listBtn btn b-nav-tab active" id="marginLeft">List</button>
-
-                                <button href="#green" data-tab="green" class="listBtn1 btn b-nav-tab" id="PaddingDown">Calendar</button>
+                            <div id="upcomingList">
+ 
+                            <button href="#orange" data-tab="orange" class="listBtn btn b-nav-tab active" >Appointments</button>
+                            <button href="#green" data-tab="green" class="listBtn1 btn b-nav-tab" >NMS</button>
                                 
                             </div>
-                            <div class="Month">March 2022</div>
-                            
-                            <div class="UpcomingButton">
-                                <button class="btn Prev" >Prev</button>
-                                <button class="btn">Next</button>
-                            </div>
 
+                               <div class="CreateButtonArea ml-auto">
+                                 <button class="btn CreateButton">Create</button>
+                               </div>
                         </div>
-
-                        <table class="table table-bordered">
+                        <table class="table table-hover">
                             <thead class="">
                                 <tr>
-                                <th>Sun</th>
+                                <th><span class="mr-3">Date</th>
                                
-                                <th>
-                                    Mon
-                                </th>
-
-                                <th>Tue </th>
-                                <th>wed </th>
+                                <th><span class="mr-5">Medicine</span>
                                 
-                                <th>  Thu</th>
-                                <th> Fri</th>
-                                <th> Sat</th>
-                            </tr></thead>
+                                </th>
+                                
+                                <th>1<sup class="SmallThen">st</sup> Intervention </th>
+                                    
+                                <th>2<sup class="SmallThen">nd</sup> Follow Up </th>
+
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
                             <tbody>
                                 <tr>
-                                    <td> <div class="StartDate">30</div></td>
-                                    <td> <div class="StartDate">31</div></td>
-                                    <td> <div class="Date">1</div></td>
-                                    <td> <div class="Date">2</div></td>
-                                    <td> <div class="Date">3</div></td>
-                                    <td>
-                                      <span class="PatientsDate d-flex">
-                                           <div class="mt-1"> 5 Patients </div>
-                                        <div class="PatientsDateMark">4</div>
-                                    </span>
-                                </td>
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="SomeBold">
+                                        <p>29/03/2022</p>
+                                        <p class="text-primary">02:00 PM</p>
+                                    </td>
 
-                                <td> <div class="Date">5</div></td>
-
+                                    <td ></td>
+                                    <td ></td>
+                                
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <span class="PatientsDate d-flex">
-                                             <div class="mt-1"> 2 Patients </div>
-                                          <div class="PatientsDateMark">6</div>
-                                      </span>
-                                  </td>
-
-                                  <td> <div class="Date">7</div></td>
-                                  <td> <div class="Date">8</div></td>
-                                  <td> <div class="Date">9</div></td>
-                                  <td> <div class="Date">10</div></td>
-                                  <td> <div class="Date">11</div></td>
-                                  <td> <div class="Date">12</div></td>
-
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="SomeBold">
+                                        <p>29/03/2022</p>
+                                        <p class="text-primary">02:00 PM</p>
+                                    </td>
+                                    <td ></td>
+                                    <td ></td>
+                                
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
                                 <tr>
-                                   
-                                  <td> <div class="Date">13</div></td>
-                                  <td> <div class="Date">14</div></td>
-                                  <td>
-                                   
-                                   <span class="PatientsDate d-flex">
-                                        <div class="DownMargin"> 1 Patients </div>
-                                      <div class="PatientsDateMark">15</div>    
-                                  </span>
-
-                                   <div class="text-danger CancelledDiv">2 Cancelled</div>
-                               
-                                 </td>
-                                  <td> <div class="Date">16</div></td>
-                                  <td> <div class="Date">17</div></td>
-                                  <td> <div class="Date">18</div></td>
-                                  <td> <div class="Date">19</div></td>
+                                    <td class="SomeBold">22<sup class="SmallThen">nd</sup> Jun, 2022</td>
+                                    <td class="SomeBold">Flu vaccination</td>
+                                    <td class="SomeBold">
+                                        <p>29/03/2022</p>
+                                        <p class="text-primary">02:00 PM <img src="../img/Group 19109.png" alt="" class="RightIcon"></p>
+                                    </td>
+                                    <td class="SomeBold">
+                                        <p>29/03/2022</p>
+                                        <p class="text-primary">02:00 PM</p>
+                                    </td>
+                                    <td ></td>
+                                
+                                    <td><button class="btn ViewButton" data-toggle="modal" data-target=".ModalArea">View</button></td>
                                 </tr>
-                                <tr>
-                                   
-                                    <td> <div class="Date">20</div></td>
-                                    <td> <div class="Date">21</div></td>
-                                    <td> <div class="Date">22</div></td>
-                                    <td> <div class="Date">23</div></td>
-                                    <td> <div class="Date">24</div></td>
-                                    <td> <div class="Date">25</div></td>
-                                    <td> <div class="Date">26</div></td>
-                                  </tr>
-                                  <tr>
-                                   
-                                    <td> <div class="Date">27</div></td>
-                                    <td> <div class="Date">28</div></td>
-                                    <td> <div class="Date">29</div></td>
-                                    <td> <div class="Date">30</div></td>
-                                    <td> <div class="Date">31</div></td>
-                                    <td> <div class="StartDate">1</div></td>
-                                    <td> <div class="StartDate">02</div></td>
-                                  </tr>
                             </tbody>
                         </table>
 
@@ -308,11 +284,6 @@
 </div>
 
 </div>
-<!-- Information Area  -->
-
-
-
-<!-- AppointmentsView-->
 
  </div>
 

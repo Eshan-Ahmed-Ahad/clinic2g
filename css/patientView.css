@@ -1051,3 +1051,188 @@ margin-bottom: -20px;
     display: block;
 }
 
+#upcomingList {
+    background-color: rgb(241, 241, 241) !important;
+    width: 25%;
+    height: 55px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+#upcomingList button {
+  
+        margin-left: 2%;
+     
+        padding-left: 15px !important;
+        padding-right: 15px;
+        margin-top: 8px;
+    
+}
+.listBtn1 {
+    margin-left: 4%;
+    background-color: #fff;
+    padding-left: 15px !important;
+    padding-right: 15px;
+    margin-top: 8px;
+}
+
+.SmallThen {
+    font-size: 10px;
+}
+
+.SomeBold {
+    font-weight: 500;
+}
+
+.ChangeColor {
+    color: #ccc;
+}
+.CreateButtonArea {
+    margin-top: 35px;
+}
+
+.CreateButton {
+    background-color: #3968CA;
+    padding:10px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.DisplayFlex {
+    display: flex;
+}
+
+.RightIcon {
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+@media all and (max-width:1284px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 30%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+
+@media all and (max-width:1130px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 35%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+@media all and (max-width:1311px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 30%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+
+
+@media all and (max-width:1150px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 35%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+
+@media all and (max-width:1066px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 40%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+
+
+@media all and (max-width:767px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 56%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+
+
+
+@media all and (max-width:538px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 62%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+}
+@media all and (max-width:592px) {
+
+}
+
+
+@media all and (max-width:496px) {
+    #upcomingList {
+        background-color: rgb(241, 241, 241) !important;
+        width: 100%;
+        height: 55px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+      .DisplayFlex {
+        display: block;
+      }
+      #upcomingList button {
+        margin-left: 13%;
+        padding-left: 15px !important;
+        padding-right: 15px;
+        margin-top: 9px;
+      }
+
+    .CreateButton {
+      background-color: #3968CA;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: 500;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width:403px){
+    #upcomingList button {
+        margin-left: 8%;
+        padding-left: 15px !important;
+        padding-right: 15px;
+        margin-top: 9px;
+      }
+}
+
+@media all and (max-width:366px){
+    #upcomingList button {
+        margin-left: 2%;
+        padding-left: 15px !important;
+        padding-right: 15px;
+        margin-top: 9px;
+      }
+}
