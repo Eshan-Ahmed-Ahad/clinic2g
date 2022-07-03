@@ -1162,8 +1162,19 @@ margin-top: 20px;
     .AppointmentHeader {
         margin-left: 0%;
 }
-
-
+.CenterText {
+    text-align: center;
+}
+.CreateButton {
+    background-color: #3968CA;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 98%;
+}
+.MarginLeft {
+    margin-left: -10px;
+}
     #upcomingList {
         background-color: rgb(241, 241, 241) !important;
         width: 100%;
